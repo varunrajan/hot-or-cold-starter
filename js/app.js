@@ -30,19 +30,19 @@ $(document).ready(function(){
         alert("Come on, bruh, that's not a number!");
       }
       else if(difference === 0) {
-        console.log("Good job, bruh");
+        $("h2#feedback").replaceWith("<h2 id='feedback'>Good job, bruh</h2>")
       }
       else if(difference > 50){
-        console.log("I can't see you when you're all the way in Antarctica.");
+        $("h2#feedback").replaceWith("<h2 id='feedback'>I can't see you when you're all the way in Antarctica.</h2>")
       }
       else if(difference <= 50 && difference > 30){
-        console.log("You look like you need a beanie.");
+        $("h2#feedback").replaceWith("<h2 id='feedback'>You look like you need a beanie.</h2>")
       }
       else if(difference <= 30 && difference > 10){
-        console.log("Ooh, heating up. You can probably change into shorts!");
+        $("h2#feedback").replaceWith("<h2 id='feedback'>Ooh, heating up. You can probably change into shorts!</h2>")
       }
       else if(difference <= 10 && difference > 0){
-        console.log("YO DON'T FLY TOO CLOSE TO THE SUN YOUR WINGS WILL BURN OFF");
+        $("h2#feedback").replaceWith("<h2 id='feedback'>YO DON'T FLY TOO CLOSE TO THE SUN YOUR WINGS WILL BURN OFF</h2>")
       };
 
     });
