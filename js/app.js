@@ -24,6 +24,13 @@ $(document).ready(function(){
       console.log(guess);
       var difference = Math.abs(rightNum - guess);
       console.log(difference);
+      var count = parseInt($("span#count").text())+1;
+
+      if (guess < 1 || guess > 100){
+        alert("The rules say guess '1 to 100.' Did you read the rules? Idiot.");
+      }
+      else {
+      $("span#count").replaceWith("<span id='count'>"+count+"</span>");
 
 
       if (isNaN(guess)){
@@ -44,7 +51,7 @@ $(document).ready(function(){
       else if(difference <= 10 && difference > 0){
         $("h2#feedback").replaceWith("<h2 id='feedback'>YO DON'T FLY TOO CLOSE TO THE SUN YOUR WINGS WILL BURN OFF</h2>")
       };
-
+    };
     });
 });
 
