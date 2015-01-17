@@ -49,7 +49,7 @@ $(document).ready(function(){
             if (differenceNow > differenceLast){
               $("h2#feedback").append("<h5>Real talk, you're colder than before</h5>");
             }
-            else if (differenceNow < differenceLast) {
+            else if (differenceNow < differenceLast && differenceNow !== 0) {
               $("h2#feedback").append("<h5>Hmm, closer than last time.</h5>");
             } 
             else if (differenceNow === differenceLast && mostRecent !== lastGuess){
